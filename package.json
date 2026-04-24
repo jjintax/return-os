@@ -1,0 +1,12 @@
+{
+  "name": "return-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Return OS personal management app with server-side shared state",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

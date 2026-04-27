@@ -6,5 +6,9 @@ localhostrun.err.log
 return-os-server.out.log
 return-os-server.err.log
 return-os-server.pid
+localhost4181.out
+localhost4181.err
+tmp-*.png
+github-upload/
 Thumbs.db
 desktop.ini

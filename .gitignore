@@ -1,0 +1,10 @@
+data/app-state.json
+*.log
+*.pid
+localhostrun.out.log
+localhostrun.err.log
+return-os-server.out.log
+return-os-server.err.log
+return-os-server.pid
+Thumbs.db
+desktop.ini

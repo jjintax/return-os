@@ -55,7 +55,11 @@ http
         return;
       }
       const ext = path.extname(filePath).toLowerCase();
-      res.writeHead(200, { "Content-Type": mimeTypes[ext] || "application/octet-stream" });
+      const headers = { "Content-Type": mimeTypes[ext] || "application/octet-stream" };
+      if ([".html", ".js", ".css", ".json", ".webmanifest"].includes(ext)) {
+        headers["Cache-Control"] = "no-store";
+      }
+      res.writeHead(200, headers);
       res.end(data);
     });
   })

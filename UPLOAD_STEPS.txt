@@ -1,0 +1,31 @@
+GitHub upload quick steps
+
+1. Open this folder:
+   C:\Users\User\Documents\Codex\2026-04-23-daglo-daglo-gpt-ai\github-upload
+
+2. In GitHub upload page, click:
+   파일을 선택하세요
+
+3. Upload these root files first:
+   .gitignore
+   GITHUB_FIRST_UPLOAD.md
+   README.md
+   RENDER_DEPLOY.md
+   index.html
+   manifest.webmanifest
+   package.json
+   render.yaml
+   server.js
+   sw.js
+
+4. Commit changes
+
+5. In GitHub repo, upload src files next:
+   src/app.js
+   src/styles.css
+   src/icon-192.svg
+   src/icon-512.svg
+
+6. Commit changes again
+
+7. Return to Render and deploy latest commit

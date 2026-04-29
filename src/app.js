@@ -217,6 +217,10 @@ function hasLocalAppState() {
   return Boolean(localStorage.getItem(STORAGE_KEY));
 }
 
+function isLocalHostApp() {
+  return location.hostname === "localhost" || location.hostname === "127.0.0.1";
+}
+
 function normalizeAppState(data) {
   if (!data.profiles || !data.profileData) {
     const migratedId = crypto.randomUUID();
@@ -3579,8 +3583,8 @@ async function bootstrap() {
   try {
     const remote = await loadRemoteAppState();
     const remoteHasProfiles = Array.isArray(remote?.profiles) && remote.profiles.length > 0;
-    const localHasState = hasLocalAppState();
-    if (localHasState) {
+    const shouldUseLocalFirst = isLocalHostApp() && hasLocalAppState();
+    if (shouldUseLocalFirst) {
       appState = loadLocalAppState();
       shouldSyncRemote = true;
     } else {
@@ -3634,7 +3638,7 @@ function queueRemoteSave() {
 async function saveRemoteAppState(payload) {
   const body = JSON.stringify(payload);
   const urls = ["./api/state"];
-  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+  if (isLocalHostApp()) {
     urls.push(PUBLIC_STATE_URL);
   }
   const results = await Promise.allSettled(

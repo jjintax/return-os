@@ -212,6 +212,10 @@ function loadLocalAppState() {
   }
 }
 
+function hasLocalAppState() {
+  return Boolean(localStorage.getItem(STORAGE_KEY));
+}
+
 function normalizeAppState(data) {
   if (!data.profiles || !data.profileData) {
     const migratedId = crypto.randomUUID();
@@ -3570,13 +3574,20 @@ function slugify(value) {
 }
 
 async function bootstrap() {
+  let shouldSyncRemote = false;
   try {
     const remote = await loadRemoteAppState();
     const remoteHasProfiles = Array.isArray(remote?.profiles) && remote.profiles.length > 0;
-    appState = normalizeAppState(remoteHasProfiles ? remote : loadLocalAppState());
-    if (!remoteHasProfiles) {
+    const localHasState = hasLocalAppState();
+    if (localHasState) {
+      appState = loadLocalAppState();
+      shouldSyncRemote = true;
+    } else {
+      appState = normalizeAppState(remoteHasProfiles ? remote : loadLocalAppState());
       localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
-      await saveRemoteAppState(appState);
+      if (!remoteHasProfiles) {
+        shouldSyncRemote = true;
+      }
     }
     storageMode = "server";
     syncLabel = "Cloud connected";
@@ -3590,6 +3601,9 @@ async function bootstrap() {
   state = getActiveProfileState();
   selectedRoutineId = state.routines[0]?.id || "";
   renderApp();
+  if (shouldSyncRemote && storageMode === "server") {
+    queueRemoteSave();
+  }
 }
 
 async function loadRemoteAppState() {

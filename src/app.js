@@ -3746,20 +3746,16 @@ function formatDateLabel(dateKey) {
 
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
   window.addEventListener("load", async () => {
-    const isLocalhost = ["localhost", "127.0.0.1"].includes(location.hostname);
-    if (isLocalhost) {
-      try {
-        const registrations = await navigator.serviceWorker.getRegistrations();
-        await Promise.all(registrations.map((registration) => registration.unregister()));
-        if ("caches" in window) {
-          const keys = await caches.keys();
-          await Promise.all(keys.map((key) => caches.delete(key)));
-        }
-      } catch {}
-      return;
+    try {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.map((registration) => registration.unregister()));
+      if ("caches" in window) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map((key) => caches.delete(key)));
+      }
+    } catch {
+      // The app should keep running even if browser cache cleanup is blocked.
     }
-
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
   });
 }
 

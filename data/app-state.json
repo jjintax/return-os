@@ -1,0 +1,676 @@
+{
+  "activeProfileId": "54efda30-6d55-4394-93f9-c1b3c0ba5248",
+  "profiles": [
+    {
+      "id": "54efda30-6d55-4394-93f9-c1b3c0ba5248",
+      "name": "나",
+      "color": "#2563eb"
+    },
+    {
+      "id": "ddaea63b-6c9e-42a4-a3d7-0af3ac3e7f85",
+      "name": "이진영",
+      "color": "#7c3aed"
+    }
+  ],
+  "profileData": {
+    "54efda30-6d55-4394-93f9-c1b3c0ba5248": {
+      "routines": [
+        {
+          "id": "r1",
+          "name": "기상 후 물 마시기",
+          "category": "생활",
+          "checkedDateList": [
+            "2026-04-18",
+            "2026-04-19",
+            "2026-04-20",
+            "2026-04-21",
+            "2026-04-22"
+          ],
+          "streak": 0
+        },
+        {
+          "id": "r2",
+          "name": "25분 공부 시작",
+          "category": "공부",
+          "checkedDateList": [
+            "2026-04-20",
+            "2026-04-21",
+            "2026-04-22",
+            "2026-04-23"
+          ],
+          "streak": 0
+        },
+        {
+          "id": "r3",
+          "name": "업무 시작 전 오늘 3개 정하기",
+          "category": "업무",
+          "checkedDateList": [
+            "2026-04-19",
+            "2026-04-21",
+            "2026-04-23"
+          ],
+          "streak": 0
+        }
+      ],
+      "sleepLogs": [
+        {
+          "date": "2026-04-23",
+          "wakeTime": "07:40",
+          "sleepTime": "00:30"
+        },
+        {
+          "date": "2026-04-24",
+          "wakeTime": "06:00",
+          "sleepTime": "23:30"
+        },
+        {
+          "date": "2026-04-25",
+          "wakeTime": "07:00",
+          "sleepTime": "00:30"
+        },
+        {
+          "date": "2026-04-26",
+          "wakeTime": "05:30",
+          "sleepTime": "00:30"
+        }
+      ],
+      "studySessions": [
+        {
+          "id": "474c0c74-6349-4364-83be-691ed052b602",
+          "date": "2026-04-25",
+          "subject": "재무설계",
+          "startTime": "09:01",
+          "durationMinutes": 360,
+          "focusScore": 3,
+          "reviewScore": 3,
+          "evaluationText": "",
+          "roundCount": 1
+        },
+        {
+          "id": "e4473e77-6555-4fc4-8777-9f58f57acfc0",
+          "date": "2026-04-24",
+          "subject": "알고리즘",
+          "startTime": "12:20",
+          "durationMinutes": 25,
+          "focusScore": 3,
+          "reviewScore": 3,
+          "evaluationText": "알고리즘 손코딩",
+          "roundCount": 1
+        },
+        {
+          "id": "94282ba2-b786-4913-8afa-c2f585ff4de3",
+          "date": "2026-04-23",
+          "subject": "영어",
+          "startTime": "10:00",
+          "durationMinutes": 50,
+          "focusScore": 4,
+          "evaluationText": "시작은 늦었지만 끊기지 않음",
+          "roundCount": 1
+        },
+        {
+          "id": "21c4bb19-f297-45d1-96c0-3de4cc7e02bf",
+          "date": "2026-04-24",
+          "subject": "자료구조",
+          "startTime": "15:00",
+          "durationMinutes": 70,
+          "focusScore": 3,
+          "evaluationText": "개념 정리는 됐고 문제 풀이 필요",
+          "roundCount": 1
+        }
+      ],
+      "workLogs": [
+        {
+          "id": "ce569be9-7791-472c-9033-5007c5bb1687",
+          "date": "2026-04-23",
+          "focusScore": 4,
+          "memo": "회의 전 문서 정리",
+          "tags": [
+            "문서",
+            "회의"
+          ]
+        },
+        {
+          "id": "0fd3641b-409f-4b68-813e-097c6c3eb8bd",
+          "date": "2026-04-24",
+          "focusScore": 3,
+          "memo": "오후 집중력 하락",
+          "tags": [
+            "집중",
+            "오후"
+          ]
+        }
+      ],
+      "emotionLogs": [
+        {
+          "id": "00c98cec-e936-40df-9380-9c81f0302c4a",
+          "date": "2026-04-26",
+          "emotionLevel": 3,
+          "emotionEmoji": "🙂",
+          "memo": "피곤함 그래서 한시간 7시에 좀 더 잤다가 도서관 못 올 뻔함",
+          "causeTags": [
+            "보통",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "acdff33b-6dbe-4e89-952e-bb5b9635f5ff",
+          "date": "2026-04-25",
+          "emotionLevel": 3,
+          "emotionEmoji": "🙂",
+          "memo": "수면 저장 후 컨디션 기록 · 피로도 보통",
+          "causeTags": [
+            "보통",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "cabad60e-dceb-40ec-a35e-068e6c587743",
+          "date": "2026-04-25",
+          "emotionLevel": 3,
+          "emotionEmoji": "🙂",
+          "memo": "12시 30분에 자고5시 30분에 눈떠짐.. 출근이라고 생각한듯? 그래도 한 번 더잠 약간 피곤하긴 했음 오늘 10시에 자야할 듯 함",
+          "causeTags": [
+            "보통",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "c77e439d-c766-48e0-83ec-858f322a5652",
+          "date": "2026-04-25",
+          "emotionLevel": 3,
+          "emotionEmoji": "🙂",
+          "memo": "어제 소비자재무설계 100점 맞아서 기분은 나름 좋은듯, 그리고 오늘도 피곤했긴 했는데 콜드브루라떼랑 코딩할 거 생각하고 도서관옴 그리고 3번 자리 좋은 것 같다 7번 자리는 자꾸 책상 이격떄문에 힘들었는데 아주 맘에듬 그리고 이중거치대도 너무 마음에 든다 키가큰 나에게는 아주 좋은 선택임",
+          "causeTags": []
+        },
+        {
+          "id": "c289c0a3-e6d1-424f-aae9-933b32062a2b",
+          "date": "2026-04-25",
+          "emotionLevel": 3,
+          "emotionEmoji": "🙂",
+          "memo": "안정 원인 빠른 기록",
+          "causeTags": [
+            "안정"
+          ]
+        },
+        {
+          "id": "84c381c8-4876-42fd-bd3e-3032cbe258cf",
+          "date": "2026-04-25",
+          "emotionLevel": 4,
+          "emotionEmoji": "😊",
+          "memo": "소재설 100점 맞음 기분 좋음",
+          "causeTags": []
+        },
+        {
+          "id": "c218ea7f-a3ab-42cc-896d-39792c2ed36b",
+          "date": "2026-04-25",
+          "emotionLevel": 4,
+          "emotionEmoji": "😊",
+          "memo": "회복 ?먯씤 鍮좊Ⅸ 湲곕줉",
+          "causeTags": [
+            "회복"
+          ]
+        },
+        {
+          "id": "f188be3c-7ef9-41f1-ba22-44abb1127b2e",
+          "date": "2026-04-25",
+          "emotionLevel": 4,
+          "emotionEmoji": "🙂",
+          "memo": "수면 저장 후 컨디션 기록 · 피로도 괜찮음",
+          "causeTags": [
+            "괜찮음",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "0a825ce2-b9de-4077-b569-6a88230919b7",
+          "date": "2026-04-25",
+          "emotionLevel": 4,
+          "emotionEmoji": "🙂",
+          "memo": "수면 저장 후 컨디션 기록 · 피로도 괜찮음",
+          "causeTags": [
+            "괜찮음",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "29a2dbf2-c1a8-4821-bca2-e11589e62e0a",
+          "date": "2026-04-25",
+          "emotionLevel": 4,
+          "emotionEmoji": "🙂",
+          "memo": "비타민 5000정도 먹어서 그런지? 괜찮음",
+          "causeTags": [
+            "괜찮음",
+            "수면체크"
+          ]
+        },
+        {
+          "id": "1fa9bb26-88c3-4a50-bd8a-67acadd0f112",
+          "date": "2026-04-24",
+          "emotionLevel": 3,
+          "emotionEmoji": "😐",
+          "memo": "비교 원인 빠른 기록",
+          "causeTags": [
+            "비교"
+          ]
+        },
+        {
+          "id": "e2757003-b1f8-4270-a8c5-b70594377845",
+          "date": "2026-04-24",
+          "emotionLevel": 3,
+          "emotionEmoji": "😐",
+          "memo": "해야 할 일이 많아서 머리가 복잡함",
+          "causeTags": [
+            "마감",
+            "피로"
+          ]
+        }
+      ],
+      "mistakeLogs": [
+        {
+          "id": "d0c8e22b-3721-4620-bbc6-2f80eb104dc4",
+          "date": "2026-04-24",
+          "count": 2,
+          "area": "업무",
+          "typeTags": [
+            "누락",
+            "확인부족"
+          ],
+          "severity": 3,
+          "memo": "작업 전 체크리스트 필요"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "9b5f1352-1fc7-4bb3-a6f6-7443cd1c2fde",
+          "date": "2026-04-24",
+          "text": "?? ??? ?? 30? - 첫 2분만",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "79348e62-b4c2-4d87-8a54-900c1b3b0aab",
+          "date": "2026-04-24",
+          "text": "업무 메모 1개 정리",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "d80b83ba-eef2-4559-8307-d5be2ee117f6",
+          "date": "2026-04-24",
+          "text": "잠들기 전 회고 3줄",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "5db2911d-b4f9-4532-bdbf-474199900451",
+          "date": "2026-04-22",
+          "text": "Important test task",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "af8f506c-bd81-45b9-ac09-74d1aca255d7",
+          "date": "2026-04-24",
+          "text": "14:00 ?? ??",
+          "done": false,
+          "kind": "schedule"
+        },
+        {
+          "id": "d0cc17fd-4df4-40bf-bda5-f898cd88e276",
+          "date": "2026-04-24",
+          "text": "?? ?? ???",
+          "done": false,
+          "kind": "todo"
+        },
+        {
+          "id": "863749ac-5560-40a3-be9e-4f24db56cde5",
+          "date": "2026-04-25",
+          "text": "소재설 중간고사",
+          "done": true,
+          "kind": "focus"
+        },
+        {
+          "id": "2fd8452d-1d39-4f3c-9157-975f40093dc8",
+          "date": "2026-04-25",
+          "text": "통계학입문 손필기",
+          "done": true,
+          "kind": "focus"
+        },
+        {
+          "id": "7ddb5dc8-0450-48fd-8751-c5d039cd9f80",
+          "date": "2026-04-25",
+          "text": "족보 화요일에 올릴 거 정리하기",
+          "done": true,
+          "kind": "focus"
+        },
+        {
+          "id": "52931544-933d-4620-9ab8-e1cc463034fc",
+          "date": "2026-04-25",
+          "text": "비타민 4천 먹으니까 좋음",
+          "done": false,
+          "kind": "diary"
+        },
+        {
+          "id": "5eb42bba-291f-4b1f-8b4b-26b2e4531dcb",
+          "date": "2026-04-26",
+          "text": "통계학입문 1회독 손필기",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "8ea4c35c-453b-403e-aef7-b3ddc0c0c3a8",
+          "date": "2026-04-26",
+          "text": "통계학입문 과제",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "b8dc0f00-ff42-4537-946b-d48000ff16b3",
+          "date": "2026-04-26",
+          "text": "마우스장패드 챙기기",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "3cccc187-59f7-4d95-8932-055d9d027e0a",
+          "date": "2026-04-26",
+          "text": "생각난 것들 GPT 회고",
+          "done": false,
+          "kind": "todo"
+        }
+      ],
+      "briefingKeywords": [
+        {
+          "id": "0b15066e-e8a2-417f-b496-8179abfb1d6b",
+          "keyword": "루틴"
+        },
+        {
+          "id": "61271245-3c00-451a-97aa-693309d80dab",
+          "keyword": "몰입"
+        },
+        {
+          "id": "1188d693-df2a-43c4-b1bd-612d741d31be",
+          "keyword": "시간관리"
+        }
+      ],
+      "workBrainDumps": [
+        {
+          "id": "e39cbfb5-b3bb-4b1f-bea1-6d18caa77817",
+          "text": "비품사기",
+          "createdDate": "2026-04-25",
+          "dueDate": "",
+          "done": false,
+          "doneDate": ""
+        },
+        {
+          "id": "ab65648c-42f3-46ac-8580-4b667efc006d",
+          "text": "지방소득세 확인",
+          "createdDate": "2026-04-25",
+          "dueDate": "",
+          "done": false,
+          "doneDate": ""
+        }
+      ],
+      "studySuppliesNote": "충전기, 디카페인 일리 2개, 고려은단 비타민 4개, 오메가3, 파워에이드, 오늘붓기, 샤프, 앞머리그루프, 2단 거치대, 압박스타킹, 금요일에 입은옷, 헤드셋, 손목보호대, 파스, 마우스, 키스킨, 아몬드브리즈, 단백질쉐이크, 포스트잇, 인덱스, 샤프2B, 필통,",
+      "studySuppliesByDate": {
+        "2026-04-25": {
+          "note": "충전기, 디카페인 일리 2개, 고려은단 비타민 4개, 오메가3, 파워에이드, 오늘붓기, 샤프, 앞머리그루프, 2단 거치대, 압박스타킹, 금요일에 입은옷, 헤드셋, 손목보호대, 파스, 마우스, 키스킨, 아몬드브리즈, 단백질쉐이크, 포스트잇, 인덱스, 샤프2B, 필통,",
+          "checked": {
+            "앞머리그루프": true,
+            "금요일에 입은옷": true,
+            "헤드셋": true,
+            "충전기": true,
+            "오늘붓기": true,
+            "마우스": true,
+            "키스킨": true
+          }
+        },
+        "2026-04-26": {
+          "note": "충전기, 디카페인 일리 2개, 고려은단 비타민 4개, 오메가3, 파워에이드, 오늘붓기, 샤프, 앞머리그루프, 2단 거치대, 압박스타킹, 금요일에 입은옷, 헤드셋, 손목보호대, 파스, 마우스, 키스킨, 아몬드브리즈, 단백질쉐이크, 포스트잇, 인덱스, 샤프2B, 필통,",
+          "checked": {}
+        },
+        "2026-04-29": {
+          "note": "충전기, 디카페인 일리 2개, 고려은단 비타민 4개, 오메가3, 파워에이드, 오늘붓기, 샤프, 앞머리그루프, 2단 거치대, 압박스타킹, 금요일에 입은옷, 헤드셋, 손목보호대, 파스, 마우스, 키스킨, 아몬드브리즈, 단백질쉐이크, 포스트잇, 인덱스, 샤프2B, 필통,",
+          "checked": {}
+        }
+      },
+      "conditionLogs": [
+        {
+          "id": "7e053fe3-ee0b-4e24-bf81-0827503831ac",
+          "date": "2026-04-25",
+          "slotKey": "evening",
+          "time": "19:00",
+          "score": 40
+        },
+        {
+          "id": "fa4900e8-c17c-403a-8156-89ac49baabbe",
+          "date": "2026-04-25",
+          "slotKey": "afternoon",
+          "time": "15:00",
+          "score": 55
+        },
+        {
+          "id": "5e8cba68-5d9d-40a1-8b3f-4bce87cf1d97",
+          "date": "2026-04-25",
+          "slotKey": "noon",
+          "time": "12:30",
+          "score": 100
+        },
+        {
+          "id": "ce14ed3f-c1d9-49f0-97b9-58d096dd4994",
+          "date": "2026-04-25",
+          "slotKey": "morning",
+          "time": "09:00",
+          "score": 85
+        }
+      ],
+      "quoteEntries": [
+        {
+          "id": "23ace0b1-70ed-4e01-b760-13df501a4482",
+          "text": "Practice makes progress",
+          "shownCount": 1,
+          "lastShownAt": "2026. 4. 24. 오후 10:16:51"
+        },
+        {
+          "id": "dd7798ce-1783-49db-91d3-2c50bebab494",
+          "text": "One clear sentence a day",
+          "shownCount": 2,
+          "lastShownAt": "2026. 4. 25. 오후 5:25:47"
+        },
+        {
+          "id": "21af56e5-5604-4de2-8e37-f57b65f7a882",
+          "text": "Tiny steps still count",
+          "shownCount": 3,
+          "lastShownAt": "2026. 4. 25. 오후 5:25:48"
+        }
+      ],
+      "currentQuoteId": "21af56e5-5604-4de2-8e37-f57b65f7a882",
+      "expenseLogs": []
+    },
+    "ddaea63b-6c9e-42a4-a3d7-0af3ac3e7f85": {
+      "routines": [
+        {
+          "id": "r1",
+          "name": "기상 후 물 마시기",
+          "category": "생활",
+          "checkedDateList": [
+            "2026-04-18",
+            "2026-04-19",
+            "2026-04-20",
+            "2026-04-21",
+            "2026-04-22"
+          ],
+          "streak": 0
+        },
+        {
+          "id": "r2",
+          "name": "25분 공부 시작",
+          "category": "공부",
+          "checkedDateList": [
+            "2026-04-20",
+            "2026-04-21",
+            "2026-04-22",
+            "2026-04-23"
+          ],
+          "streak": 0
+        },
+        {
+          "id": "r3",
+          "name": "업무 시작 전 오늘 3개 정하기",
+          "category": "업무",
+          "checkedDateList": [
+            "2026-04-19",
+            "2026-04-21",
+            "2026-04-23"
+          ],
+          "streak": 0
+        }
+      ],
+      "sleepLogs": [
+        {
+          "date": "2026-04-23",
+          "wakeTime": "07:40",
+          "sleepTime": "00:30"
+        },
+        {
+          "date": "2026-04-24",
+          "wakeTime": "06:10",
+          "sleepTime": "23:30"
+        }
+      ],
+      "studySessions": [
+        {
+          "id": "549d33b3-5d28-4d28-8a59-17b5f145c5e1",
+          "date": "2026-04-24",
+          "subject": "??",
+          "startTime": "12:28",
+          "durationMinutes": 15,
+          "focusScore": 5,
+          "reviewScore": 5,
+          "evaluationText": "???? ??? ?? ??? ?? ???? ????.",
+          "roundCount": 1
+        },
+        {
+          "id": "0deb037b-68cc-4af1-b6d8-54908a3d9da3",
+          "date": "2026-04-23",
+          "subject": "영어",
+          "startTime": "10:00",
+          "durationMinutes": 50,
+          "focusScore": 4,
+          "evaluationText": "시작은 늦었지만 끊기지 않음",
+          "roundCount": 1
+        },
+        {
+          "id": "18191be7-3698-4ac2-af04-596e6f737d7b",
+          "date": "2026-04-24",
+          "subject": "자료구조",
+          "startTime": "15:00",
+          "durationMinutes": 70,
+          "focusScore": 3,
+          "evaluationText": "개념 정리는 됐고 문제 풀이 필요",
+          "roundCount": 1
+        }
+      ],
+      "workLogs": [
+        {
+          "id": "924f79bd-abb0-4966-8e6a-1cecfcdc50a2",
+          "date": "2026-04-23",
+          "focusScore": 4,
+          "memo": "회의 전 문서 정리",
+          "tags": [
+            "문서",
+            "회의"
+          ]
+        },
+        {
+          "id": "297ca380-30c1-46ff-aa58-93bfd057510b",
+          "date": "2026-04-24",
+          "focusScore": 3,
+          "memo": "오후 집중력 하락",
+          "tags": [
+            "집중",
+            "오후"
+          ]
+        }
+      ],
+      "emotionLogs": [
+        {
+          "id": "499e36a8-5529-44ff-b953-e578b83c3f68",
+          "date": "2026-04-24",
+          "emotionLevel": 3,
+          "emotionEmoji": "😐",
+          "memo": "해야 할 일이 많아서 머리가 복잡함",
+          "causeTags": [
+            "마감",
+            "피로"
+          ]
+        }
+      ],
+      "mistakeLogs": [
+        {
+          "id": "9dad57ec-c1da-419d-a1ae-c6ffaecb2815",
+          "date": "2026-04-24",
+          "count": 2,
+          "area": "업무",
+          "typeTags": [
+            "누락",
+            "확인부족"
+          ],
+          "severity": 3,
+          "memo": "작업 전 체크리스트 필요"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5afde46b-ec20-4e4e-92b3-49abb747cc9c",
+          "date": "2026-04-24",
+          "text": "가장 중요한 공부 25분",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "7f78f93d-721e-4491-b5ba-b5a1d0230fb6",
+          "date": "2026-04-24",
+          "text": "업무 메모 1개 정리",
+          "done": false,
+          "kind": "focus"
+        },
+        {
+          "id": "445fdd28-62ab-49f4-a097-6c2cef50631d",
+          "date": "2026-04-24",
+          "text": "잠들기 전 회고 3줄",
+          "done": false,
+          "kind": "focus"
+        }
+      ],
+      "briefingKeywords": [
+        {
+          "id": "4738eb40-2272-4e99-bbdc-520976a73ab5",
+          "keyword": "루틴"
+        },
+        {
+          "id": "a7600857-c865-4c71-a379-4b2d37d2c9de",
+          "keyword": "몰입"
+        },
+        {
+          "id": "e5d171e5-6a6c-4848-817c-7944eb6c6687",
+          "keyword": "시간관리"
+        }
+      ],
+      "workBrainDumps": [],
+      "studySuppliesNote": "",
+      "studySuppliesByDate": {},
+      "conditionLogs": [],
+      "quoteEntries": [
+        {
+          "id": "4b0a618c-2764-42df-a6cf-2dacc5d5eff0",
+          "text": "새앙쥐 레이스 소득이 커지면 지출이 커져 일자리를 끊지 못하는 현상",
+          "shownCount": 0,
+          "lastShownAt": ""
+        }
+      ],
+      "currentQuoteId": "4b0a618c-2764-42df-a6cf-2dacc5d5eff0",
+      "expenseLogs": []
+    }
+  }
+}

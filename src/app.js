@@ -1,5 +1,6 @@
 ﻿const STORAGE_KEY = "return-os-mvp-v1";
 const todayKey = toDateKey(new Date());
+const PUBLIC_STATE_URL = "https://return-os.onrender.com/api/state";
 const PROFILE_COLORS = ["#2563eb", "#0f766e", "#7c3aed", "#b45309", "#dc2626", "#475569"];
 
 const tabs = [
@@ -3631,12 +3632,23 @@ function queueRemoteSave() {
 }
 
 async function saveRemoteAppState(payload) {
-  const response = await fetch("./api/state", {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-  if (!response.ok) throw new Error("Failed to save remote state");
+  const body = JSON.stringify(payload);
+  const urls = ["./api/state"];
+  if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    urls.push(PUBLIC_STATE_URL);
+  }
+  const results = await Promise.allSettled(
+    urls.map((url) =>
+      fetch(url, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body,
+      }),
+    ),
+  );
+  if (!results.some((result) => result.status === "fulfilled" && result.value.ok)) {
+    throw new Error("Failed to save remote state");
+  }
 }
 
 function formatIcsDateTime(dateKey, timeValue) {

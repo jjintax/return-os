@@ -7,6 +7,7 @@ const host = process.env.HOST || "0.0.0.0";
 const root = __dirname;
 const dataDir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(root, "data");
 const dataFile = path.join(dataDir, "app-state.json");
+const bundledDataFile = path.join(root, "data", "app-state.json");
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, PUT, OPTIONS",
@@ -93,6 +94,26 @@ function ensureDataFile() {
       JSON.stringify({ activeProfileId: null, profiles: [], profileData: {} }, null, 2),
       "utf8",
     );
+  }
+  syncBundledState();
+}
+
+function syncBundledState() {
+  if (!process.env.DATA_DIR || process.env.DISABLE_BUNDLED_STATE_SYNC === "1") return;
+  if (path.resolve(bundledDataFile) === path.resolve(dataFile)) return;
+  if (!fs.existsSync(bundledDataFile)) return;
+
+  try {
+    const bundled = fs.readFileSync(bundledDataFile, "utf8");
+    const parsed = JSON.parse(bundled);
+    if (!Array.isArray(parsed.profiles) || parsed.profiles.length === 0) return;
+
+    const current = fs.existsSync(dataFile) ? fs.readFileSync(dataFile, "utf8") : "";
+    if (current !== bundled) {
+      fs.writeFileSync(dataFile, bundled, "utf8");
+    }
+  } catch (error) {
+    console.error("Failed to sync bundled state:", error.message);
   }
 }
 
